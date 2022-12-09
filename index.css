@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainContentContainer{
+    text-align: center;
+    font-family: arial;
+}
+
+.menuIcon{
+    width: 50px;
+    height: auto;
+}
+
+.menuIconContainer{
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+.sideBarContainer{
+    width: 200px;
+    margin-left: -145px;
+}
+
+.sideBarLinksContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 15px;
+}
+
+.sideBarLinks{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.sideBarOpenAnimationClass{
+    animation: sideBarOpenAnimation .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sideBarOpenAnimation {
+    0%{
+        margin-left: -145px;
+    }
+    100%{
+        margin-left: 0px;
+    }
+}
