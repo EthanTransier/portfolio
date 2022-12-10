@@ -2,15 +2,35 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    background-image: url(./images/spaceBackground.jpg);
+    background-size: 100%;
+    
+}
+.backgroundStuff{
+    filter: blur(3px);
+}
 
 .mainContentContainer{
     text-align: center;
-    font-family: arial;
+    display: flex;
+    justify-content: center;
+    margin-left: 55px;
+    
+}
+.mainContentTitle{
+    width: 100%;
+    font-size: 70px;
+    font-weight: normal;
+    font-family: montserrat-light;
+    color: white;
+
 }
 
 .menuIcon{
     width: 50px;
     height: auto;
+    padding-right: 2px;
 }
 
 .menuIconContainer{
@@ -21,6 +41,9 @@
 .sideBarContainer{
     width: 200px;
     margin-left: -145px;
+    background-color: orange;
+    height: 100%;
+    position:fixed;
 }
 
 .sideBarLinksContainer{
@@ -49,4 +72,33 @@
     100%{
         margin-left: 0px;
     }
+}
+
+.sideBarCloseAnimationClass {
+    animation: sideBarCloseAnimation .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes sideBarCloseAnimation {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: -145px;
+    }
+}
+
+/* FONTS */
+@font-face {
+    font-family: montserrat-regular;
+    src: url(./montserrat/static/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: montserrat-light;
+    src: url(./montserrat/static/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: montserrat-bold;
+    src: url(./montserrat/static/Montserrat-Bold.ttf);
 }
