@@ -10,18 +10,31 @@
 <body onscroll="scrolled()" onload="scrolled()">
     <!-- MAIN CONTENT AREA -->
     <div class="mainContentContainer">
-        <img src="./images/spaceBackground.jpg" alt="Image of ME" class="profilePicture">
+
+        <div class="logoLinksContainer">
+            <a href=""><img src="./images/twitterLogo.jpg" alt="" class="logoImage"></a>
+            <a href=""><img src="./images/instagramLogo.png" alt="" class="logoImage instagramImage"></a>
+            <a href=""><img src="./images/facebookLogo.png" alt="" class="logoImage"></a>
+            <a href=""><img src="./images/linkedInLogo.jpg" alt="" class="logoImage"></a>
+        </div>
+
+        <img src="./images/selfie.webp" alt="Image of ME" class="profilePicture">
         <!-- Title for the main content area, which is just the name -->
         <h1 class="mainContentTitle">
             Ethan Transier
         </h1>
         <div class="mainLinksContainer">
-            <a href="./index.html" class="mainLink" id="redText">Home</a>
-            |
+            <a href="./index.html" class="mainLink" id="purpleText">Home</a>
+             <div class="linkDividers">|</div> 
             <a href="./about/about.html" class="mainLink">About Me</a>
-            |
+            <div class="linkDividers">|</div>
             <a href="./resume/resume.html">Resume</a>
         </div>
+        <!-- Container for the Downwards Arrow -->
+        <div class="whiteBoxDownArrowTop"></div>
+        <div class="downArrow"></div>
+        <div class="downArrowColored"></div>
+        <div class="whiteBoxDownArrow"></div>
         <!-- Informational Box 1 -->
         <div class="infoBoxHider" id="infoBoxHiderID"></div>
         <div class="giftCardContainer" id="infoContainerID">
@@ -45,7 +58,7 @@
             <div class="verticalLine1"></div>
             <div class="verticalLine2"></div>
             
-            <div class="transparentImagePart"></div>
+            <div class="transparentImagePartInfoBox"></div>
             <div class="giftText">
                 <p id="giftTEXT">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, autem?
             </div>

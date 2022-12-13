@@ -1,0 +1,229 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainContentContainer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoLinksContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoImage {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.instagramImage {
+    filter: brightness(125%);
+}
+
+.mainContentTitle {
+    width: 100%;
+    font-size: 70px;
+    font-weight: normal;
+    font-family: montserrat-light;
+    color: black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.profilePicture {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    margin-top: 10px;
+    border-color: rgb(143, 39, 255);
+    border-width: 2px;
+    border-style: solid;
+    object-fit: contain;
+    background-color: #b4b2a5;
+}
+
+/* FONTS */
+@font-face {
+    font-family: montserrat-regular;
+    src: url(../montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: montserrat-light;
+    src: url(../montserrat/static/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: montserrat-bold;
+    src: url(../montserrat/static/Montserrat-Bold.ttf);
+}
+
+.mainLinksContainer {
+    font-family: montserrat-light;
+    font-size: 25px;
+    color: rgb(83, 83, 83);
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainLinksContainer a {
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+}
+
+.mainLinksContainer a:hover {
+    color: rgb(92, 0, 168);
+}
+
+#purpleText {
+    color: rgb(92, 0, 168);
+    font-weight: 600;
+}
+
+.linkDividers {
+    transform: skew(-15deg, 0deg);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.downArrow {
+    width: 2px;
+    height: 65px;
+    background-color: rgb(83, 83, 83);
+    margin-bottom: 25px;
+    margin-top: 5px;
+
+}
+
+.downArrowColored {
+    width: 2px;
+    height: 20px;
+    background-color: rgb(143, 39, 255);
+    margin-bottom: 600px;
+    position: absolute;
+    animation: downArrowAnimation 1s infinite linear;
+    box-shadow: 0px 0px 1px 0.5px rgb(143, 39, 255);
+}
+
+@keyframes downArrowAnimation {
+    0% {
+        margin-bottom: 625px;
+    }
+
+    100% {
+        margin-bottom: 445px;
+    }
+}
+
+.whiteBoxDownArrow {
+    background-color: white;
+    width: 10px;
+    height: 25px;
+    position: absolute;
+    margin-bottom: 450px;
+}
+
+.whiteBoxDownArrowTop {
+    background-color: white;
+    width: 10px;
+    height: 25px;
+    position: absolute;
+    margin-bottom: 625px;
+    z-index: 5;
+}
+
+.codingBoxesContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 25px;
+}
+.codingBox{
+    width: 300px;
+    font-family: montserrat-regular;
+    font-size: 20px;
+}
+.codingTitle{
+    width: 100%;
+    color: white;
+}
+.htmlTitle{
+    background-color: rgba(255, 111, 0, 0.754);
+}
+.htmlInfoBox{
+    background-color: rgba(255, 148, 66, 0.781);
+}
+.htmlPercentageBox{
+    width: 294px;
+    height: 50px;
+    border: rgb(255, 119, 0) 3px solid;
+    margin-top: 10px;
+    display: flex;
+}
+.htmlPercentage{
+    height: 100%;
+    width: calc(294px * 0.84);
+    background-color: rgb(255, 119, 0);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cssTitle{
+    background-color: rgba(0, 201, 0, 0.754);
+}
+.cssInfoBox {
+    background-color: rgba(101, 255, 121, 0.781);
+}
+.cssPercentageBox {
+    width: 294px;
+    height: 50px;
+    border: rgb(1, 224, 57) 3px solid;
+    margin-top: 10px;
+    display: flex;
+}
+
+.cssPercentage {
+    height: 100%;
+    width: calc(294px * 0.73);
+    background-color: rgb(1, 224, 57);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.javascriptTitle{
+    background-color: rgba(115, 0, 255, 0.754);
+}
+.javascriptInfoBox {
+    background-color: rgba(170, 101, 255, 0.781);
+}
+.javascriptPercentageBox {
+    width: 294px;
+    height: 50px;
+    border: rgb(90, 1, 224) 3px solid;
+    margin-top: 10px;
+    display: flex;
+}
+
+.javascriptPercentage {
+    height: 100%;
+    width: calc(294px * 0.49);
+    background-color: rgb(90, 1, 224);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
