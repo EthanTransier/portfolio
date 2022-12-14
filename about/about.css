@@ -140,7 +140,20 @@
     margin-bottom: 625px;
     z-index: 5;
 }
-
+.codingLanguagesTitle{
+    font-size: 45px;
+    color: black;
+    font-family: montserrat-light;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+/* Underlines the Language Title */
+.languageTitleUnderline{
+    background-color: rgb(92, 0, 168);
+    height: 3px;
+    width: 285px;
+    position: relative;
+}
 .codingBoxesContainer{
     display: flex;
     flex-direction: row;
@@ -226,4 +239,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.pastProjectsTitle {
+    font-size: 45px;
+    color: black;
+    font-family: montserrat-light;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+/* Underlines the Language Title */
+.projectsTitleUnderline {
+    background-color: rgb(92, 0, 168);
+    height: 3px;
+    width: 325px;
+    position: relative;
+    margin-top: 75px;
+}
+
+.pastProjectsContainer{
+    display: flex;
+    background-color: white;
+    gap: 140px;
+}
+
+.pastProjectContainer{
+    width: 350px;
+    background-color: rgb(35, 35, 35);
+}
+.pastProjectTitle{
+    color: white;
+    font-size: 35px;
+    font-family: montserrat-regular;
+}
+.pastProjectPicture{
+    width: 100%;
+    height: auto;
 }
