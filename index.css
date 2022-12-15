@@ -60,7 +60,7 @@
 }
 
 /* giftcard box */
-.giftCardContainer {
+.infoBoxContainer {
     background-color: rgb(35, 35, 35);
     color: black;
     font-size: 35px;
@@ -73,7 +73,7 @@
 
 }
 
-.giftCardImage {
+.infoBoxImage {
     width: 630px;
     height: 400px;
     object-fit: cover;
@@ -86,7 +86,7 @@
     object-position: 30% 0;
 }
 
-.verticalLine1 {
+.infoBoxVerticalLine1 {
     width: 14px;
     height: 400px;
     position: relative;
@@ -95,25 +95,25 @@
     z-index: 9;
 }
 
-.verticalLine2 {
+.infoBoxVerticalLine2 {
     width: 15px;
     height: 400px;
     position: relative;
     background-color: rgb(143, 39, 255);
-    transform: skew(-15deg, 0deg) translateX(-68px);
+    transform: skew(-15deg, 0deg) translateX(-74px);
     z-index: 9;
 }
 
-.verticalLine3 {
+.infoBoxVerticalLine3 {
     width: 15px;
     height: 400px;
     position: relative;
     background-color: rgb(92, 0, 168);
-    transform: skew(-15deg, 0deg) translateX(67px);
+    transform: skew(-15deg, 0deg) translateX(-67px);
     z-index: 9;
 }
 
-.verticalLine4 {
+.infoBoxVerticalLine4 {
     width: 15px;
     height: 400px;
     position: relative;
@@ -122,22 +122,22 @@
     z-index: 9;
 }
 
-.transparentImagePart {
+.infoBoxTransparentImagePart {
     background-color: rgb(35, 35, 35);
     height: 400px;
-    width: 10px;
+    width: 1px;
     position: relative;
-    right: 286px;
-    transform: skew(-15deg, 0deg) translateX(-150px) scaleX(14);
+    /* left: 150px; */
+    transform: skew(-15deg, 0deg) scaleX(140);
 }
 
-.transparentImagePart2 {
+.infoBoxTransparentImagePart2 {
     background-color: white;
     height: 400px;
-    width: 121px;
+    width: 1px;
     position: relative;
     left: 202px;
-    transform: skew(-15deg, 0deg) translateX(-150px) scaleX(1.1);
+    transform: skew(-15deg, 0deg) translateX(-209px) scaleX(145) scaleY(1.01);
 }
 .transparentImagePartInfoBox2{
     background-color: rgb(35, 35, 35);
@@ -156,9 +156,9 @@
     transform: skew(-15deg, 0deg) translateX(-150px) scaleX(14);
 }
 
-.giftText {
+.infoBoxText {
     height: 100%;
-    width: 500px;
+    width: 600px;
     text-decoration: none;
     text-align: center;
     align-items: center;
@@ -167,9 +167,10 @@
     z-index: 10;
     color: white;
     display: flex;
+    padding-right: 100px;
 }
 
-#giftTEXT {
+.infoBoxInnerText {
     position: relative;
     width: 100%;
     line-height: 1.35;
@@ -221,14 +222,14 @@
 
 @keyframes infoBox1AppearAnimation{
     0%{
-       margin-right: 0px;  
+       transform: translateX(0px);  
     }
     99%{
-       margin-right: 185vw;
-       z-index: 10;
+        transform: translateX(185vw);
+        z-index: 10;
     }
     100%{
-        margin-right: 185vw;
+        transform: translateX(185vw);
         display: none;
         z-index: -10;
     }
