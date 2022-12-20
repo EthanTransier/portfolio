@@ -5,18 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./about.css">
-    <title>Document</title>
+    <title>About</title>
 </head>
 <body>
-    <body onload="scrolled()">
         <!-- MAIN CONTENT AREA -->
         <div class="mainContentContainer">
             
             <div class="logoLinksContainer">
-                <a href=""><img src="../images/twitterLogo.jpg" alt="" class="logoImage"></a>
-                <a href=""><img src="../images/instagramLogo.png" alt="" class="logoImage instagramImage"></a>
-                <a href=""><img src="../images/facebookLogo.png" alt="" class="logoImage"></a>
-                <a href=""><img src="../images/linkedInLogo.jpg" alt="" class="logoImage"></a>
+                <a href="https://twitter.com/home"><img src="../images/twitterLogo.jpg" alt="" class="logoImage"></a>
+                <a href="https://www.instagram.com/"><img src="../images/instagramLogo.png" alt="" class="logoImage instagramImage"></a>
+                <a href="https://www.facebook.com/"><img src="../images/facebookLogo.png" alt="" class="logoImage"></a>
+                <a href="https://www.indeed.com/"><img src="../images/linkedInLogo.jpg" alt="" class="logoImage"></a>
             </div>
             
             <img src="../images/selfie.webp" alt="Image of ME" class="profilePicture">
@@ -50,7 +49,7 @@
                 </div>
                 <div class="javascriptInfoBox codingBox">
                     <h2 class="javascriptTitle codingTitle">Javascript</h2>
-                    <p class="codingText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi incidunt, ex ut fugit ea sapiente voluptatum assumenda corporis numquam, beatae necessitatibus tenetur nam animi iusto, quia non nesciunt natus accusamus? Nulla esse atque quasi qui cumque sunt fuga fugiat saepe quod natus incidunt ea alias architecto quas, laudantium suscipit accusantium!</p>
+                    <p class="codingText">Compared to HTML and CSS, Javascript is the language that is the one that I know the least about. Like the other two languages, my learning of Javascript is ongoing, and I am still increasing my knowledge of this language every day, and I am eager to learn more about it. I still have a good amount of knowledge about Javascript, and I am able to use it well enough.</p>
                     <div class="javascriptPercentageBox">
                         <div class="javascriptPercentage">49%</div>
                     </div>
@@ -61,18 +60,47 @@
             <div class="pastProjectsContainer">
                 <div class="jiLongContainer pastProjectContainer">
                     <p class="jiLongTitle pastProjectTitle">Jī lóng Grill</p>
-                    <img src="../images/jiLongPicture.PNG" alt="Picture of my website for FBLA, Jī lóng Grill" class="jiLongPicture pastProjectPicture">
+                    <div class="imageAndSeeProjectContainer" onmouseenter="seeProjectAnimation('jiLongContainer')" onmouseleave="seeProjectAnimationEnd('jiLongContainer')">
+                        <img src="../images/jiLongPicture.PNG" alt="Picture of my website for FBLA, Jī lóng Grill"
+                            class="jiLongPicture pastProjectPicture">
+                        <div class="seeProjectContainer" id="jiLongContainer">See Project</div>
+                        
+                        <div class="seeProjectBlur" id="jiLongContainerBlur"></div>
+                        <a href="https://github.com/EthanTransier/FBLA-Website_Project-V2" class="githubRepoLink"
+                            id="jiLongContainerLink">Github</a>
+                    </div>
+                    
                 </div>
                 <div class="ticTacToeContainer pastProjectContainer">
                     <p class="ticTacToeTitle pastProjectTitle">Tic-Tac-Toe</p>
-                    <img src="" alt="">
+                    
+                    <div class="imageAndSeeProjectContainer" onmouseenter="seeProjectAnimation('ticTacToeContainer')"
+                        onmouseleave="seeProjectAnimationEnd('ticTacToeContainer')">
+                        <img src="../images/ticTacToePicture.png" alt="Picture of my Tic Tac Toe Project"
+                            class="ticTacToePicture pastProjectPicture">
+                        <div class="seeProjectContainer" id="ticTacToeContainer">See Project</div>
+                    
+                        <div class="seeProjectBlur" id="ticTacToeContainerBlur"></div>
+                        <a href="https://github.com/EthanTransier/Tic-Tac-Toe" class="githubRepoLink"
+                            id="ticTacToeContainerLink">Github</a>
+                    </div>
+                    
+                    
                 </div>
                 <div class="validSaladContainer pastProjectContainer">
                     <p class="validSaladTitle pastProjectTitle">Valid Salads</p>
-                    <img src="" alt="">
+                    <div class="imageAndSeeProjectContainer" onmouseenter="seeProjectAnimation('validSaladsContainer')"
+                        onmouseleave="seeProjectAnimationEnd('validSaladsContainer')">
+                        <img src="../images/validSaladsPicture.png" alt="Picture of my Valid Salads Project"
+                            class="validSaladsPicture pastProjectPicture">
+                        <div class="seeProjectContainer" id="validSaladsContainer">See Project</div>
+                    
+                        <div class="seeProjectBlur" id="validSaladsContainerBlur"></div>
+                        <a href="https://github.com/Merik-K/group-westmec" class="githubRepoLink" id="validSaladsContainerLink">Github</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </body>
+        <script src="./about.js"></script>
 </body>
 </html>

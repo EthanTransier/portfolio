@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainContentContainer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoLinksContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.logoImage {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.instagramImage {
+    filter: brightness(125%);
+}
+
+.mainContentTitle {
+    width: 100%;
+    font-size: 70px;
+    font-weight: normal;
+    font-family: montserrat-light;
+    color: black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.profilePicture {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+    margin-top: 10px;
+    border-color: rgb(143, 39, 255);
+    border-width: 2px;
+    border-style: solid;
+    object-fit: contain;
+    background-color: #b4b2a5;
+}
+
+/* FONTS */
+@font-face {
+    font-family: montserrat-regular;
+    src: url(../montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: montserrat-light;
+    src: url(../montserrat/static/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: montserrat-bold;
+    src: url(../montserrat/static/Montserrat-Bold.ttf);
+}
+
+.mainLinksContainer {
+    font-family: montserrat-light;
+    font-size: 25px;
+    color: rgb(83, 83, 83);
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.mainLinksContainer a {
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+}
+
+.mainLinksContainer a:hover {
+    color: rgb(92, 0, 168);
+}
+
+#purpleText {
+    color: rgb(92, 0, 168);
+    font-weight: 600;
+}
+
+.linkDividers {
+    transform: skew(-15deg, 0deg);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+iframe{
+    width: 80%;
+    height: 1000px;
+}

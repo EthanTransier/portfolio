@@ -67,92 +67,54 @@
     display: flex;
     justify-content: space-between;
     height: 400px;
-    width: 1200px;
+    width: 1292px;
+    max-width: 1292px;
+    min-width: 500px;
     text-align: center;
-
-
+    gap: 0;
+    transform: skew(-15deg, 0deg);
+    margin-left: 75px;
 }
 
 .infoBoxImage {
     width: 630px;
+    max-width: 630px;
+    min-width: 243.808049533px;
     height: 400px;
-    object-fit: cover;
-    object-position: 30% 0;
-}
-.infoBox2Image{
-    width: 630px;
-    height: 400px;
-    object-fit: cover;
-    object-position: 30% 0;
 }
 
-.infoBoxVerticalLine1 {
-    width: 14px;
+.infoBoxText {
+    transform: skew(15deg, 0deg);
+    padding-left: 50px;
+}
+
+/* PURPLE LINES FOR THE INFO BOXES */
+.verticalLines {
+    width: 15px;
     height: 400px;
     position: relative;
-    background-color: rgb(92, 0, 168);
-    transform: skew(-15deg, 0deg) translateX(-53px);
     z-index: 9;
+}
+
+/* VERTICAL LINES FROM LEFT TO RIGHT */
+.infoBoxVerticalLine1 {
+    background-color: rgb(92, 0, 168);
+    /* transform: skew(-15deg, 0deg) translateX(-60px); */
 }
 
 .infoBoxVerticalLine2 {
-    width: 15px;
-    height: 400px;
-    position: relative;
     background-color: rgb(143, 39, 255);
-    transform: skew(-15deg, 0deg) translateX(-74px);
-    z-index: 9;
+    /* transform: skew(-15deg, 0deg) translateX(-60px); */
 }
 
 .infoBoxVerticalLine3 {
-    width: 15px;
-    height: 400px;
-    position: relative;
     background-color: rgb(92, 0, 168);
-    transform: skew(-15deg, 0deg) translateX(-64px);
-    z-index: 9;
+    /* transform: skew(-15deg, 0deg) translateX(-26px); */
 }
 
 .infoBoxVerticalLine4 {
-    width: 15px;
-    height: 400px;
-    position: relative;
     background-color: rgb(143, 39, 255);
-    transform: skew(-15deg, 0deg) translateX(-60px);
-    z-index: 9;
-}
-
-.infoBoxTransparentImagePart {
-    background-color: rgb(35, 35, 35);
-    height: 400px;
-    width: 1px;
-    position: relative;
-    /* left: 150px; */
-    transform: skew(-15deg, 0deg) scaleX(140);
-}
-
-.infoBoxTransparentImagePart2 {
-    background-color: white;
-    height: 400px;
-    width: 1px;
-    position: relative;
-    transform: skew(-15deg, 0deg) translateX(-7px) scaleX(155) scaleY(1.01);
-}
-.transparentImagePartInfoBox2{
-    background-color: rgb(35, 35, 35);
-    height: 400px;
-    width: 121px;
-    position: relative;
-    left: 375px;
-    transform: skew(-15deg, 0deg) translateX(150px) scaleX(1.1);
-}
-.transparentImagePartInfoBox {
-    background-color: white;
-    height: 400px;
-    width: 10px;
-    position: relative;
-    left: 3px;
-    transform: skew(-15deg, 0deg) translateX(-150px) scaleX(14);
+    /* transform: skew(-15deg, 0deg) translateX(-26px); */
 }
 
 .infoBoxText {
@@ -173,6 +135,34 @@
     position: relative;
     width: 100%;
     line-height: 1.35;
+}
+.infoBox2InnerText {
+    position: relative;
+    width: 100%;
+    line-height: 1.35;
+    padding-left: 50px;
+}
+
+@font-face {
+    font-family: montserrat-regular;
+    src: url(./montserrat/static/Montserrat-Regular.ttf);
+}
+
+@media only screen and (max-width: 1160px) {
+    .infoBoxImage {
+        display: none;
+    }
+
+    .infoBoxContainer {
+        max-width: 662px;
+        min-width: 200px;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    .infoBoxText {
+        font-size: 30px;
+    }
 }
 
 .mainLinksContainer{
