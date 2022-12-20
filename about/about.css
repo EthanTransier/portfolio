@@ -164,10 +164,18 @@
     width: 300px;
     font-family: montserrat-regular;
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .codingTitle{
     width: 100%;
     color: white;
+}
+.codingText{
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
 }
 .htmlTitle{
     background-color: rgba(255, 111, 0, 0.754);
