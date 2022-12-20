@@ -91,7 +91,7 @@
     height: 400px;
     position: relative;
     background-color: rgb(92, 0, 168);
-    transform: skew(-15deg, 0deg) translateX(-44px);
+    transform: skew(-15deg, 0deg) translateX(-53px);
     z-index: 9;
 }
 
@@ -109,7 +109,7 @@
     height: 400px;
     position: relative;
     background-color: rgb(92, 0, 168);
-    transform: skew(-15deg, 0deg) translateX(-67px);
+    transform: skew(-15deg, 0deg) translateX(-64px);
     z-index: 9;
 }
 
@@ -118,7 +118,7 @@
     height: 400px;
     position: relative;
     background-color: rgb(143, 39, 255);
-    transform: skew(-15deg, 0deg) translateX(42px);
+    transform: skew(-15deg, 0deg) translateX(-60px);
     z-index: 9;
 }
 
@@ -136,8 +136,7 @@
     height: 400px;
     width: 1px;
     position: relative;
-    left: 202px;
-    transform: skew(-15deg, 0deg) translateX(-209px) scaleX(145) scaleY(1.01);
+    transform: skew(-15deg, 0deg) translateX(-7px) scaleX(155) scaleY(1.01);
 }
 .transparentImagePartInfoBox2{
     background-color: rgb(35, 35, 35);
